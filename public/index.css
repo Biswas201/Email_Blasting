@@ -1,0 +1,321 @@
+.frame-child {
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 193px);
+  box-shadow: var(--drop-shadow);
+  border-radius: 30px;
+  background: linear-gradient(
+    -44.68deg,
+    rgba(26, 217, 211, 0.29),
+    rgba(13, 13, 13, 0.22) 40.98%
+  );
+  width: 386px;
+  height: 463px;
+  box-shadow: 0px 0px 15px rgba(10, 162, 172, 0.608); 
+}
+.login {
+  position: absolute;
+  top: calc(50% - 198px);
+  left: calc(50% - 47px);
+  display: inline-block;
+  font-weight: 800;
+  font-family: var(--font-inter);
+  width: 93px;
+  height: 38px;
+}
+.frame-item {
+  top: calc(50% - 120px);
+  left: calc(50% - 156px);
+  background-color: var(--color-whitesmoke-100);
+  width: 311px;
+}
+.frame-item,
+.rectangle-div {
+  position: absolute;
+  border-radius: var(--br-7xs);
+  height: 57px;
+}
+
+.login-button {
+  position: absolute;
+  top: 350px; 
+  left: calc(50% - 85px);
+  width: 170px;
+  height: 50px;
+  background-color: #3df0de;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+}
+
+.login-button:hover {
+  background-color: #35d4c7;
+  transform: scale(1.1); 
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); 
+}
+
+.login1{
+  position: absolute;
+  display: inline-block;
+  height: 23px;
+}
+
+.username-input,
+.password-input {
+    position: absolute;
+    left: calc(50% - 178px);
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: var(--br-7xs);
+    border: none;
+    font-size: var(--font-size-xl);
+    background-color: var(--color-whitesmoke-100);
+}
+
+.username-input {
+  top: 100px;
+}
+
+.password-input {
+  top: 200px; 
+}
+
+.login1 {
+  top: 330px;
+  left: calc(50% - 38px);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: #f8f8f8;
+  width: 76px;
+}
+.shadowmailer,
+.the-unlimited-email {
+  position: absolute;
+  top: 500px;
+  left: calc(50% - 259px);
+  display: inline-block;
+  width: 518px;
+  height: 37px;
+}
+.shadowmailer {
+  top: calc(50% - 275px);
+  left: calc(50% - 139px);
+  font-weight: 700;
+  width: 276px;
+}
+.best-grim-reaper-wallpaper-rem-icon {
+  position: absolute;
+  top: 80px;
+  left: 530px;
+  width: 410px;
+  height: 100vh;
+  object-fit: cover;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: var(--drop-shadow);
+  background: conic-gradient(
+    from -10.62deg at 50% 50%,
+    #000 -148.65deg,
+    #0e0e0e 42.56deg,
+    #094846 105.67deg,
+    #000 211.35deg,
+    #0e0e0e 402.56deg
+  );
+  position:fixed;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.mask-group {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-times-new-roman);
+}
+
+
+/* mail page */
+.tabs{
+  padding: 10px; 
+  padding-left: 100px;
+}
+.tab-button{
+  background-color: #35d4c7;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  width: 18vh;
+  height: 35px;
+  box-shadow: 0px 0px 15px rgba(10, 162, 172, 0.608);
+  transition: all 0.3s ease-in-out; 
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(16, 89, 102);
+}
+.tab-button:hover{
+    background: linear-gradient(-44.68deg, whitesmoke, #35d4c7);
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); 
+}
+
+.tabs-container{
+  color: whitesmoke;
+  box-shadow: var(--drop-shadow);
+  background: conic-gradient(
+    from -10.62deg at 50% 50%,
+    #000 -148.65deg,
+    #0e0e0e 42.56deg,
+    #094846 105.67deg,
+    #000 211.35deg,
+    #0e0e0e 402.56deg
+  );
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 740px;
+  overflow: hidden;
+}
+
+.tab-content{
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 325px);
+  box-shadow: var(--drop-shadow);
+  border-radius: 30px;
+  background: linear-gradient(
+    -44.68deg,
+    rgba(26, 217, 211, 0.29),
+    rgba(13, 13, 13, 0.22) 40.98%
+  );
+  width: 582px;
+  height: 560px;
+  box-shadow: 0px 0px 15px rgba(10, 162, 172, 0.608);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+input, textarea, select {
+  padding: 8px;
+  margin-top: 5px;
+  margin-left: 20px;
+  width: 90%;
+  border-radius: 10px;
+  background: rgb(9,9,121);
+  background: linear-gradient(245deg, rgb(38, 64, 197), 35%,  rgb(139, 198, 219) 100%);
+}
+
+.tabsbu{
+  margin-left: 18px;
+}
+
+#bu{
+  display: block;
+}
+
+img{
+  position: fixed;
+  left: 73rem;
+  top: 10rem;
+}
+
+.send_btn,
+.clear_btn{
+    position: absolute;
+    top: calc(100% - 70px);
+    left: calc(100% - 260px);
+    width: 110px;
+    height: 35px;
+    background-color: #3df0de;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+  }
+
+  .send_btn:hover {
+    background-color: #35d4c7;
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); 
+}
+
+  .back_btn{
+    left: calc(100% - 525px);
+  }
+  .back_btn:hover{
+    background-color: #35d4c7;
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+  }
+
+  .clear_btn{
+    left: calc(100% - 470px);
+  }
+
+  .clear_btn:hover{
+    background-color: #35d4c7;
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+  }
+
+  /*loading*/
+  .loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.spinner {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  background: radial-gradient(circle closest-side,#2ac6da 94%,#f7f4f400) right/calc(200% - 1em) 100%;
+  animation: l24 1s infinite alternate linear;
+}
+
+.spinner::before {
+  content: "Progressing...";
+  line-height: 1em;
+  color: #1fa5aa00;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side,#fff 94%,#2097b9);
+  -webkit-background-clip:text;
+          background-clip:text;
+}
+
+@keyframes l24{
+  100%{background-position: left}
+}
+  
+
+  
+
+
+

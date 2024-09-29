@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Blasting Software - Mail</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <style>
+      h3 {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgb(8, 3, 105) 0%,
+          rgb(14, 14, 153) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: whitesmoke;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tabs-container">
+      <div class="tabs">
+        <button class="tab-button" onclick="openTab(event, 'Tab1')">
+          Tab 1
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab2')">
+          Tab 2
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab3')">
+          Tab 3
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab4')">
+          Tab 4
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab5')">
+          Tab 5
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab6')">
+          Tab 6
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab7')">
+          Tab 7
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab8')">
+          Tab 8
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab9')">
+          Tab 9
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Tab10')">
+          Tab 10
+        </button>
+      </div>
+      <div id="Tab1" class="tab-content">
+        <form id="form-1" action="/send-emails" method="POST">
+          <h3>TAB 1</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab2" class="tab-content">
+        <form id="form-2" action="/send-emails" method="POST">
+          <h3>TAB 2</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab3" class="tab-content">
+        <form id="form-3" action="/send-emails" method="POST">
+          <h3>TAB 3</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab4" class="tab-content">
+        <form id="form-4" action="/send-emails" method="POST">
+          <h3>TAB 4</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab5" class="tab-content">
+        <form id="form-5" action="/send-emails" method="POST">
+          <h3>TAB 5</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab6" class="tab-content">
+        <form id="form-6" action="/send-emails" method="POST">
+          <h3>TAB 6</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab7" class="tab-content">
+        <form id="form-7" action="/send-emails" method="POST">
+          <h3>TAB 7</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab8" class="tab-content">
+        <form id="form-8" action="/send-emails" method="POST">
+          <h3>TAB 8</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab9" class="tab-content">
+        <form id="form-9" action="/send-emails" method="POST">
+          <h3>TAB 9</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+
+      <div id="Tab10" class="tab-content">
+        <form id="form-10" action="/send-emails" method="POST">
+          <h3>TAB 10</h3>
+          <label for="smtp-server-1">SMTP Server</label>
+          <div class="tabsbu">
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.gmail.com"
+            >
+              Gmail
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.mail.yahoo.com"
+            >
+              Yahoo
+            </button>
+            <button
+              class="tab-button"
+              id="smtp-server-1"
+              name="smtpServer"
+              value="smtp.outlook.com"
+            >
+              Outlook
+            </button>
+          </div>
+
+          <label for="sender-email-1">Sender Email</label>
+          <input type="email" id="sender-email-1" name="senderEmail" required />
+
+          <label for="app-password-1">App Password</label>
+          <input
+            type="password"
+            id="app-password-1"
+            name="appPassword"
+            required
+          />
+
+          <label for="recipients-1">Recipients</label>
+          <textarea id="recipients-1" name="recipients" required> </textarea>
+
+          <label for="email-subject-1">Email Subject</label>
+          <input
+            type="text"
+            id="email-subject-1"
+            name="subjectTemplate"
+            required
+          />
+
+          <label for="email-body-1">Email Body (HTML)</label>
+          <textarea id="email-body-1" name="bodyTemplate" required> </textarea>
+          <div class="button-grp">
+            <button
+              id="bu"
+              class="send_btn"
+              type="submit"
+              value="smtp.gmail.com"
+              name="smtpServer"
+            >
+              Send Emails
+            </button>
+            <button id="clear-form" class="clear_btn" type="button">
+              Clear
+            </button>
+            <!-- <button id="back-to-login" class="back_btn" type="button" onClick="goBackToLogin()">Back</button> -->
+          </div>
+        </form>
+      </div>
+    </div>
+    <img alt="" src="./assets/grim.png" />
+    <!-- <scrip src="./render.js">
+    </script> -->
+    <script>
+      function openTab(event, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementsByClassName("tab-button")[0].click();
+
+      //clear button logic
+      document
+        .getElementById("clear-form")
+        .addEventListener("click", function () {
+          const formElements = document.getElementById("email-form-1").elements;
+
+          for (let i = 0; i < formElements.length; i++) {
+            const fieldType = formElements[i].type.toLowerCase();
+            switch (fieldType) {
+              case "text":
+              case "email":
+              case "password":
+              case "textarea":
+                formElements[i].value = "";
+                break;
+              case "checkbox":
+              case "radio":
+                formElements[i].checked = false;
+                break;
+              default:
+                break;
+            }
+          }
+        });
+
+      //Back button logic
+      // function goBackToLogin() {
+      //   window.location.href = '/';
+      // }
+
+      function showTabForm() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tabNumber = urlParams.get("tab");
+
+        if (tabNumber) {
+          document.querySelectorAll(".tab-content").forEach((content) => {
+            content.style.display = "none";
+          });
+
+          const formToShow = document.getElementById(`Tab${tabNumber}`);
+          if (formToShow) {
+            formToShow.style.display = "block";
+          }
+        } else {
+          document.getElementById("Tab1").style.display = "block";
+        }
+      }
+
+      // Call the function
+      document.addEventListener("DOMContentLoaded", showTabForm);
+    </script>
+  </body>
+</html>
